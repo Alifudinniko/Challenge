@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+	<script>
+		let angka = [-6, -4, 0, 1, 2, 2, 3, 10, 12, 44, 52, 72, 98]
+
+		let max = angka[(angka.length - 1)]
+		let min = angka[0]
+		let median
+		if (angka.length % 2 === 0) {
+			median = (angka[((angka.length / 2) - 1)] + angka[(angka.length / 2)]) / 2
+		} else {
+			median = angka[(Math.round(angka.length / 2) - 1)]
+		}
+		let avg = ((angka.reduce((prev, current) => prev + current, 0)) / angka.length)
+
+		console.log(angka)
+		console.log("Max: " + max)
+		console.log("Min: " + min)
+		console.log("Median: " + median)
+		console.log("Average: " + avg)
+	</script>
+</body>
+
+</html>

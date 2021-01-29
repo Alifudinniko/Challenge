@@ -3,9 +3,9 @@
 
 <body>
 	<script>
-		let jam = prompt("Konversi jam ke menit\nMasukkan angka jam:")
-		let menit = prompt("Konversi menit ke jam\nMasukkan angka menit:")
-		let menit2 = prompt("Konversi menit ke tahun\nMasukkan angka menit:")
+		let jam = prompt("jam ke menit : ... jam")
+		let menit = prompt("menit ke jam : ... menit")
+		let menit2 = prompt("menit ke tahun : ... menit")
 
 		jamToMenit(jam)
 		menitToJam(menit)
@@ -13,17 +13,17 @@
 
 		function jamToMenit(jam) {
 			jamMenit = parseInt(jam) * 60;
-			console.log(jam + " jam ke menit : " + jamMenit)
+			console.log("konversi " + jam + " jam ke menit : yaitu" + jamMenit + " menit")
 		}
 
 		function menitToJam(menit) {
 			menitJam = parseInt(menit) / 60;
-			console.log(menit + " menit ke jam : " + menitJam)
+			console.log("konversi " + menit + " menit ke jam : " + menitJam + " jam")
 		}
 
 		function menitToTahun(menit2) {
 			menitTahun = (((parseInt(menit2) / 60) / 24) / 365)
-			console.log(menit2 + " menit ke tahun : " + menitTahun)
+			console.log("konversi " + menit2 + " menit ke tahun : " + menitTahun + " tahun")
 		}
 	</script>
 </body>
